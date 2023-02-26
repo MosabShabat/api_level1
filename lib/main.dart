@@ -1,7 +1,7 @@
-import 'package:api_level1/Myhome_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'controller/Myhome_controller.dart';
 import 'my_home_page.dart';
 
 void main() {

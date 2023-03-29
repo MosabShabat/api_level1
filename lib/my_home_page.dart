@@ -30,11 +30,14 @@ class _MyHomePageState extends State<MyHomePage> {
                     title: Text(snapshot.data[i]['title']),
                     subtitle: Text(snapshot.data[i]['description']),
                     trailing: Text(snapshot.data[i]['price'].toString()),
-                    leading: Image.network(
-                      snapshot.data[i]['category']['image'],
-                      width: 100,
-                      height: 100,
-                      fit: BoxFit.contain,
+                    leading: ClipRRect(
+                      borderRadius: BorderRadius.circular(100),
+                      child: Image.network(
+                        snapshot.data[i]['category']['image'],
+                        width: 100,
+                        height: 100,
+                        fit: BoxFit.contain,
+                      ),
                     ),
                   );
                 });
